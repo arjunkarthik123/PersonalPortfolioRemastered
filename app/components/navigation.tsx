@@ -36,7 +36,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href='/resume.pdf' download="Arjun Karthik" target='_blank'>
+                <a href="/resume.pdf"download="Arjun Karthik" target='_blank'>
                     <button>Download Resume</button>
                 </a>
               </li>
