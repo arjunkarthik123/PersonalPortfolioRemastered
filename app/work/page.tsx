@@ -12,11 +12,11 @@ const experiences = [
     company: "Veoneer",
     position: "Software Engineering Intern",
     time: "May 2024 - Present",
-    skills: ["C++", "Embedded Systems", "Safety-critical Software"],
+    skills: ["C#", ".NET Framework", "Python", "Flask", "Next.js", "Flutter", "PowerBI"],
     description: [
-      "Assisting in the development of safety-critical automotive software systems.",
-      "Collaborating with cross-functional teams to implement new features.",
-      "Conducting code reviews and contributing to design discussions.",
+      "Led the development of two full-stack dashboards using Next.JS showcasing production critical information providing increased visibility to senior management.",
+      "Developing a new inventory application using Flutter that will aid in company wide asset counts and save outsourcing costs.",
+      "Maintaining and debugging legacy C# software critical to production.",
     ],
     logo: veoneer,
   },
@@ -27,8 +27,7 @@ const experiences = [
     skills: ["Mentorship", "Grading", "Teaching"],
     description: [
       "Facilitated first-year engineering design course labs and tutorials.",
-      "Provided one-on-one support and feedback to over 50 students.",
-      "Assisted in grading and assignment evaluations.",
+      "Provided one-on-one support and feedback to over 50 students via detailed evaluations."
     ],
     logo: mac,
   },
@@ -36,11 +35,11 @@ const experiences = [
     company: "Transpire Technologies",
     position: "Software Developer Intern",
     time: "May 2023 - August 2023",
-    skills: ["JavaScript", "React", "Node.js"],
+    skills: ["Flutter", "TypeScript", "PlayWright Testing Framework", "WordPress", "Microsoft Office"],
     description: [
       "Developed and maintained front-end features for a customer-facing web application.",
-      "Wrote clean, scalable code in JavaScript, React, and Node.js.",
-      "Collaborated with senior developers to improve software functionality.",
+      "Led the design and deployment of a WordPress website for Urban Uniques, featuring an extensive catalog of 250+ products, leading to increased customer traffic by 50%",
+      "Automated 100+ tests for the newly developed NSSL Shuntware website in TypeScript using the Playwright framework, improving efficiency of unit testing by 200%",
     ],
     logo: transpire,
   },
@@ -67,9 +66,25 @@ export default function Work() {
       <h2 className="text-4xl font-bold text-blue-600 mb-8 absolute top-4 left-8">
         Work Experience
       </h2>
+      
 
       {/* Carousel Container */}
       <div className="relative w-full max-w-4xl p-12 bg-white rounded-lg shadow-lg mx-auto">
+        {/* Arrows Container (Moved to the top) */}
+      <div className="absolute top-4 left-0 right-0 flex justify-between px-4">
+          <button
+            className="text-4xl text-white bg-blue-500 rounded-full p-2 hover:bg-blue-600 shadow-lg transition"
+            onClick={prevSlide}
+          >
+            &#8592;
+          </button>
+          <button
+            className="text-4xl text-white bg-blue-500 rounded-full p-2 hover:bg-blue-600 shadow-lg transition"
+            onClick={nextSlide}
+          >
+            &#8594;
+          </button>
+        </div>
         {/* Current Experience */}
         <div className="flex flex-col items-center justify-center text-center">
           <div className="w-32 h-32 mb-6">
@@ -114,19 +129,7 @@ export default function Work() {
           </div>
         </div>
 
-        {/* Navigation Arrows */}
-        <button
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 text-4xl text-blue-500 hover:text-blue-700"
-          onClick={prevSlide}
-        >
-          &#8592; {/* Left Arrow */}
-        </button>
-        <button
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 text-4xl text-blue-500 hover:text-blue-700"
-          onClick={nextSlide}
-        >
-          &#8594; {/* Right Arrow */}
-        </button>
+        
       </div>
     </div>
   );
