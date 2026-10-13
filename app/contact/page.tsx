@@ -1,31 +1,26 @@
-export default function Contact() {
+import React from "react";
+import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
+import ContactSection from "../components/ContactSection";
+
+export const metadata = {
+  title: "Contact | Arjun Karthik",
+  description: "Get in touch with Arjun Karthik: arjunkarthik2003@gmail.com, (647) 545-4019, Mississauga & Hamilton, ON.",
+};
+
+export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-100 p-8 flex flex-col items-center justify-center">
-      {/* Title */}
-      <h1 className="text-4xl font-bold text-blue-600 mb-8">Contact Me</h1>
-
-      {/* Contact Information Cards */}
-      <div className="flex gap-8">
-        {/* Email Card */}
-        <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Email</h2>
-          <p className="text-xl text-gray-700">
-            <a href="mailto:arjunkarthik2003@gmail.com" className="text-blue-500 underline">
-            arjunkarthik2003@gmail.com
-            </a>
-          </p>
-        </div>
-
-        {/* Phone Number Card */}
-        <div className="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
-          <h2 className="text-2xl font-semibold text-blue-600 mb-4">Phone Number</h2>
-          <p className="text-xl text-gray-700">
-            <a href="tel:+6475454019" className="text-blue-500 underline">
-              +6475454019
-            </a>
-          </p>
-        </div>
+    <div className="pt-24 pb-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-4">
+        <Link
+          href="/"
+          className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-cyan-300 hover:text-white transition px-4 py-2 rounded-full bg-slate-900/80 border border-blue-500/20 hover:border-cyan-400"
+        >
+          <FaArrowLeft className="text-xs" />
+          <span>Back to Full Portfolio Experience</span>
+        </Link>
       </div>
+      <ContactSection />
     </div>
   );
 }

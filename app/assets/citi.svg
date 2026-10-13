@@ -1,0 +1,6 @@
+<svg viewBox="0 0 120 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Citi Arc -->
+  <path d="M 38 28 C 38 12, 82 12, 82 28 C 76 17, 44 17, 38 28 Z" fill="#EE2724"/>
+  <!-- Citi Text -->
+  <text x="60" y="48" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="34" fill="#003B70" text-anchor="middle" letter-spacing="-1.5px">citi</text>
+</svg>

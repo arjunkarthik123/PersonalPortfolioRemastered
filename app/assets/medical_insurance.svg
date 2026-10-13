@@ -1,0 +1,81 @@
+<svg viewBox="0 0 600 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Background -->
+  <rect width="600" height="360" rx="16" fill="url(#med-bg)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <g opacity="0.12">
+    <path d="M0 60 H600 M0 120 H600 M0 180 H600 M0 240 H600 M0 300 H600" stroke="#38bdf8" stroke-width="1"/>
+    <path d="M60 0 V360 M120 0 V360 M180 0 V360 M240 0 V360 M300 0 V360 M360 0 V360 M420 0 V360 M480 0 V360 M540 0 V360" stroke="#38bdf8" stroke-width="1"/>
+  </g>
+
+  <!-- Glowing Aura -->
+  <circle cx="300" cy="170" r="110" fill="#2563eb" opacity="0.25" filter="blur(40px)"/>
+  
+  <!-- Heartbeat / EKG Pulse Line -->
+  <path d="M40 230 L180 230 L205 170 L225 280 L250 140 L275 250 L290 215 L320 230 L560 230" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+
+  <!-- Medical Cross Shield Center -->
+  <g transform="translate(230, 80)">
+    <!-- Shield / Card Container -->
+    <rect x="10" y="10" width="120" height="130" rx="24" fill="#0b172e" stroke="#3b82f6" stroke-width="2"/>
+    
+    <!-- Medical Cross -->
+    <path d="M70 38 V112 M33 75 H107" stroke="#38bdf8" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="70" cy="75" r="8" fill="#60a5fa"/>
+  </g>
+
+  <!-- Neural Network Connections -->
+  <g opacity="0.75">
+    <!-- Input Layer -->
+    <circle cx="100" cy="110" r="8" fill="#60a5fa"/>
+    <circle cx="100" cy="160" r="8" fill="#60a5fa"/>
+    <circle cx="100" cy="210" r="8" fill="#60a5fa"/>
+
+    <!-- Hidden Layer 1 -->
+    <circle cx="170" cy="90" r="9" fill="#38bdf8"/>
+    <circle cx="170" cy="135" r="9" fill="#38bdf8"/>
+    <circle cx="170" cy="185" r="9" fill="#38bdf8"/>
+    <circle cx="170" cy="230" r="9" fill="#38bdf8"/>
+
+    <!-- Output Layer -->
+    <circle cx="490" cy="130" r="9" fill="#38bdf8"/>
+    <circle cx="490" cy="190" r="9" fill="#38bdf8"/>
+
+    <!-- Synapses lines -->
+    <line x1="100" y1="110" x2="170" y2="90" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+    <line x1="100" y1="110" x2="170" y2="135" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+    <line x1="100" y1="160" x2="170" y2="135" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+    <line x1="100" y1="160" x2="170" y2="185" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+    <line x1="100" y1="210" x2="170" y2="185" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+    <line x1="100" y1="210" x2="170" y2="230" stroke="#60a5fa" stroke-width="1.5" opacity="0.4"/>
+
+    <line x1="370" y1="110" x2="490" y2="130" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    <line x1="370" y1="160" x2="490" y2="130" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    <line x1="370" y1="160" x2="490" y2="190" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+    <line x1="370" y1="210" x2="490" y2="190" stroke="#38bdf8" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Metric Badges -->
+  <g transform="translate(50, 290)">
+    <rect width="150" height="34" rx="10" fill="#0d1b36" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="75" y="22" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#93c5fd" text-anchor="middle">R² Score: 0.92</text>
+  </g>
+
+  <g transform="translate(225, 290)">
+    <rect width="150" height="34" rx="10" fill="#0d1b36" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="75" y="22" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#38bdf8" text-anchor="middle">PyTorch Neural Net</text>
+  </g>
+
+  <g transform="translate(400, 290)">
+    <rect width="150" height="34" rx="10" fill="#0d1b36" stroke="#2563eb" stroke-width="1.2"/>
+    <text x="75" y="22" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#60a5fa" text-anchor="middle">Healthcare Premiums</text>
+  </g>
+
+  <defs>
+    <linearGradient id="med-bg" x1="0" y1="0" x2="600" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#08142b"/>
+      <stop offset="50%" stopColor="#0a1938"/>
+      <stop offset="100%" stopColor="#040b17"/>
+    </linearGradient>
+  </defs>
+</svg>
