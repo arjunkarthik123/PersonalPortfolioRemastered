@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaLinkedinIn, FaGithub, FaFileDownload, FaCopy, FaCheck } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -142,15 +143,14 @@ export default function ContactSection() {
               </a>
             </div>
 
-            <a
+            <Link
               href="/Arjun_Karthik_Resume_October_2026.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Arjun_Karthik_Resume_October_2026.pdf"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-500 hover:to-cyan-400 shadow-md shadow-blue-600/30 transition"
             >
               <FaFileDownload className="text-xs" />
               <span>Download Resume</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

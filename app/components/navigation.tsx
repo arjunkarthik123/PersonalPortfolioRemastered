@@ -128,28 +128,26 @@ export default function Navbar() {
               <FaGithub className="text-sm" />
             </a>
 
-            <a
+            <Link
               href="/Arjun_Karthik_Resume_October_2026.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Arjun_Karthik_Resume_October_2026.pdf"
               className="flex items-center gap-2 px-4 py-2 rounded-full text-xs font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-cyan-500 shadow-md shadow-blue-600/30 hover:shadow-cyan-500/30 transition-all duration-200"
             >
               <FaFileDownload className="text-xs" />
               <span>Resume</span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Hamburger Toggle */}
           <div className="flex sm:hidden items-center gap-2">
-            <a
+            <Link
               href="/Arjun_Karthik_Resume_October_2026.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              download="Arjun_Karthik_Resume_October_2026.pdf"
               className="px-3 py-1.5 rounded-full text-[11px] font-semibold text-white bg-blue-600 flex items-center gap-1.5 shadow-sm"
             >
               <FaFileDownload className="text-[10px]" />
               <span>CV</span>
-            </a>
+            </Link>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg bg-slate-900/80 border border-blue-500/30 text-slate-200 hover:text-white hover:bg-blue-600/20 focus:outline-none transition"
@@ -205,15 +203,14 @@ export default function Navbar() {
                   <FaEnvelope />
                 </a>
               </div>
-              <a
+              <Link
                 href="/Arjun_Karthik_Resume_October_2026.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Arjun_Karthik_Resume_October_2026.pdf"
                 className="px-4 py-2 rounded-full text-xs font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 shadow-md flex items-center gap-2"
               >
                 <FaFileDownload />
                 <span>Resume PDF</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

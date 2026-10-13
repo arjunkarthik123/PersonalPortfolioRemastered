@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaArrowRight, FaFileDownload } from "react-icons/fa";
 import arjunPic from "../assets/arjun.png";
 
@@ -55,15 +56,14 @@ export default function HeroSection() {
                 <span>View Projects</span>
               </a>
 
-              <a
+              <Link
                 href="/Arjun_Karthik_Resume_October_2026.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="Arjun_Karthik_Resume_October_2026.pdf"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm text-cyan-300 bg-blue-950/50 hover:bg-blue-900/60 border border-cyan-500/30 hover:border-cyan-400 transition-all duration-200"
               >
                 <FaFileDownload className="text-xs" />
                 <span>Resume</span>
-              </a>
+              </Link>
             </div>
 
             {/* Current Focus Highlights */}
